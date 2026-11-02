@@ -2448,3 +2448,137 @@ footer{
 .video-card figcaption {
     padding: 15px;
 }
+
+
+/* =================================
+   PREMIUM EDITORIAL FOOTER
+================================= */
+
+.site-footer {
+    background: #080808;
+    color: #fff;
+    padding: 75px 7% 25px;
+    border-top: 1px solid rgba(199, 168, 109, 0.35);
+}
+
+.footer-main {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    gap: 55px;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding-bottom: 65px;
+}
+
+/* BRANDING */
+
+.footer-brand {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.footer-logo {
+    width: 85px;
+    height: auto;
+    object-fit: contain;
+    margin-bottom: 18px;
+}
+
+.footer-brand h2 {
+    font-family: Georgia, serif;
+    font-size: 30px;
+    letter-spacing: 4px;
+    font-weight: 400;
+    margin: 0 0 12px;
+}
+
+.footer-tagline {
+    color: #c7a86d;
+    font-size: 10px;
+    letter-spacing: 2px;
+    line-height: 1.8;
+}
+
+/* FOOTER COLUMNS */
+
+.footer-column {
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+}
+
+.footer-column h3 {
+    color: #c7a86d;
+    font-size: 12px;
+    letter-spacing: 2px;
+    margin: 8px 0 12px;
+    font-weight: 600;
+}
+
+.footer-column a {
+    color: #aaa;
+    text-decoration: none;
+    font-size: 13px;
+    transition: 0.3s ease;
+}
+
+.footer-column a:hover {
+    color: #c7a86d;
+    padding-left: 4px;
+}
+
+/* BOTTOM BAR */
+
+.footer-bottom {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding-top: 22px;
+    border-top: 1px solid rgba(255, 255, 255, 0.12);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+}
+
+.footer-bottom p,
+.footer-bottom span {
+    color: #777;
+    font-size: 10px;
+    letter-spacing: 1.5px;
+    margin: 0;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 900px) {
+    .footer-main {
+        grid-template-columns: 1fr 1fr;
+        gap: 40px;
+    }
+}
+
+@media (max-width: 550px) {
+    .site-footer {
+        padding: 55px 7% 22px;
+    }
+
+    .footer-main {
+        grid-template-columns: 1fr 1fr;
+        gap: 35px 20px;
+    }
+
+    .footer-brand {
+        grid-column: 1 / -1;
+    }
+
+    .footer-brand h2 {
+        font-size: 25px;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        align-items: flex-start;
+        line-height: 1.8;
+    }
+}
