@@ -1,0 +1,252 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title data-translate="homePageTitle">Haus Esposito</title>
+
+    <link rel="icon" type="image/png" href="images/site_logo.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div id="overlay"></div>
+
+    <nav id="sidebar">
+
+        <h2>Haus Esposito</h2>
+
+        <a href="index.html" class="active" data-translate="home">Home</a>
+
+        <div class="submenu">
+
+            <span data-translate="dogs">Our Dogs</span>
+
+            <a href="reuen.html" data-translate="males">Males</a>
+            <a href="teven.html" data-translate="females">Females</a>
+            <a href="puppys.html" data-translate="puppies">Our Puppies</a>
+
+        </div>
+
+        <a href="foto-galerij.html" data-translate="gallery">Photo Gallery</a>
+        <a href="over-ons.html" data-translate="about">About Us</a>
+<a href="news.html" class="news-nav-link">
+    <span class="news-label" data-translate="news">News</span>
+    <span class="news-badge">NEW!</span>
+</a>
+        <a href="contact.html" data-translate="contact">Contact</a>
+
+    </nav>
+
+
+    <header>
+
+        <div class="logo-container">
+
+            <img src="images/logo.jpg" alt="Haus Esposito Logo">
+
+            <div>
+                <h1>Haus Esposito</h1>
+                <p data-translate="breed">German Shepherds</p>
+            </div>
+
+        </div>
+
+        <div class="language-selector">
+            <select id="languageSelect" onchange="setLanguage(this.value)">
+                <option value="en">English</option>
+                <option value="nl">Nederlands</option>
+                <option value="de">Deutsch</option>
+                <option value="it">Italiano</option>
+            </select>
+        </div>
+
+    </header>
+
+
+    <div class="menu-bar">
+
+        <button id="menuBtn">☰</button>
+
+    </div>
+
+
+    <!-- HERO -->
+
+    <section class="hero">
+
+        <div class="hero-content">
+
+            <h1 data-translate="homeHeroTitle">
+                Passion for German Shepherds
+            </h1>
+
+            <div class="hero-buttons">
+
+                <a href="reuen.html" data-translate="homeDogsButton">
+                    Our Dogs
+                </a>
+
+                <a href="contact.html" data-translate="homeContactButton">
+                    Contact Us
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- DOGS -->
+
+    <section class="dogs">
+
+        <div class="dog-card">
+
+            <img
+                src="images/reu-home.jpg"
+                alt="Male German Shepherds"
+            >
+
+            <div class="card-content">
+
+                <h2 data-translate="males">Males</h2>
+
+                <p data-translate="homeMalesText">
+                    Discover our male German Shepherds.
+                </p>
+
+                <a href="reuen.html" data-translate="viewMore">
+                    View more
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="dog-card">
+
+            <img
+                src="images/teef-home.jpg"
+                alt="Female German Shepherds"
+            >
+
+            <div class="card-content">
+
+                <h2 data-translate="females">Females</h2>
+
+                <p data-translate="homeFemalesText">
+                    Discover our female German Shepherds.
+                </p>
+
+                <a href="teven.html" data-translate="viewMore">
+                    View more
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ABOUT US -->
+
+    <section class="about-preview">
+
+        <div class="preview-container">
+
+            <span class="eyebrow" data-translate="brandEyebrow">
+                HAUS ESPOSITO
+            </span>
+
+            <h2 data-translate="about">About Us</h2>
+
+            <p data-translate="homeAboutText">
+                Haus Esposito is a small-scale kennel dedicated to
+                German Shepherds. Our dogs are part of our family
+                and receive the daily attention, exercise and care
+                they deserve.
+            </p>
+
+            <a href="over-ons.html" class="preview-btn" data-translate="readMore">
+                Read more
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- CONTACT -->
+
+    <section class="contact-preview">
+
+        <div class="preview-container">
+
+            <span class="eyebrow" data-translate="contactEyebrow">
+                CONTACT
+            </span>
+
+            <h2 data-translate="homeContactTitle">
+                Get in touch with us
+            </h2>
+
+            <p data-translate="homeContactText">
+                Do you have questions about our dogs or future litters?
+                Feel free to contact us.
+            </p>
+
+            <a href="contact.html" class="preview-btn" data-translate="homeContactButton">
+                Contact Us
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <div class="footer-content">
+
+            <div>
+                <img
+                    src="images/logo.jpg"
+                    class="footer-logo"
+                    alt="Haus Esposito"
+                >
+            </div>
+
+            <div>
+
+                <h3 data-translate="contact">Contact</h3>
+
+                <p>info@hausesposito.com</p>
+
+                <p>+39 379 144 9435</p>
+
+            </div>
+
+        </div>
+
+        <div class="copyright" data-translate="copyright">
+            All rights reserved.
+        </div>
+
+    </footer>
+
+
+    <script src="translations.js"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>
