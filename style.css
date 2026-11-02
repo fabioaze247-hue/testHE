@@ -2083,9 +2083,9 @@ footer {
     flex: 0 0 auto;
 }
 
-/* ========================================
+/* =========================================
    MOBIELE HEADER - GEEN OVERLAPPING
-======================================== */
+========================================= */
 
 @media (max-width: 768px) {
 
@@ -2093,7 +2093,7 @@ footer {
         display: flex;
         flex-direction: column;
         align-items: stretch;
-        gap: 15px;
+        gap: 12px;
         padding: 18px 15px;
     }
 
@@ -2103,18 +2103,11 @@ footer {
         justify-content: center;
         align-items: center;
         gap: 12px;
-        min-width: 0;
-    }
-
-    .logo-container img {
-        width: 70px;
-        height: 70px;
-        flex-shrink: 0;
     }
 
     .logo-container h1 {
         font-size: clamp(1.2rem, 5vw, 1.5rem);
-        white-space: normal;
+        white-space: nowrap;
     }
 
     .language-selector {
@@ -2138,15 +2131,11 @@ footer {
     }
 
     .dog-header .profile-pic {
-        display: block;
         width: 250px;
         max-width: 85%;
         height: auto !important;
-        min-height: 0;
-        max-height: none;
         aspect-ratio: auto !important;
         object-fit: contain !important;
-        flex: 0 0 auto;
     }
 }
 
@@ -2237,7 +2226,7 @@ footer {
 }
 
 .contact-preview {
-    background: #111;
+    background: #d7d0d0;
 }
 
 .preview-container {
@@ -2249,7 +2238,7 @@ footer {
 }
 
 .contact-preview .preview-container {
-    background: #181818;
+    background: white;
     border: 1px solid rgba(199, 168, 109, .3);
 }
 
@@ -2260,12 +2249,12 @@ footer {
 }
 
 .contact-preview .preview-container h2 {
-    color: white;
+    color: black;
 }
 
 .preview-container p {
     max-width: 750px;
-    color: #666;
+    color: black;
     font-size: 1.05rem;
     line-height: 1.8;
     margin-bottom: 28px;
