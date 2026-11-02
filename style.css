@@ -2083,9 +2083,9 @@ footer {
     flex: 0 0 auto;
 }
 
-/* =========================================
+/* ========================================
    MOBIELE HEADER - GEEN OVERLAPPING
-========================================= */
+======================================== */
 
 @media (max-width: 768px) {
 
@@ -2093,7 +2093,7 @@ footer {
         display: flex;
         flex-direction: column;
         align-items: stretch;
-        gap: 12px;
+        gap: 15px;
         padding: 18px 15px;
     }
 
@@ -2103,11 +2103,18 @@ footer {
         justify-content: center;
         align-items: center;
         gap: 12px;
+        min-width: 0;
+    }
+
+    .logo-container img {
+        width: 70px;
+        height: 70px;
+        flex-shrink: 0;
     }
 
     .logo-container h1 {
         font-size: clamp(1.2rem, 5vw, 1.5rem);
-        white-space: nowrap;
+        white-space: normal;
     }
 
     .language-selector {
@@ -2131,11 +2138,15 @@ footer {
     }
 
     .dog-header .profile-pic {
+        display: block;
         width: 250px;
         max-width: 85%;
         height: auto !important;
+        min-height: 0;
+        max-height: none;
         aspect-ratio: auto !important;
         object-fit: contain !important;
+        flex: 0 0 auto;
     }
 }
 
